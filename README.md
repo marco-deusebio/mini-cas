@@ -325,19 +325,19 @@ Summary:
 
 ## Current limitations
 
-This is still a mini-CAS, not a full computer algebra system.
+This project is intentionally a mini-CAS, not a full symbolic algebra system.
 
 Current limitations include:
 
-- no full symbolic simplifier/canonicalizer yet
-- no transcendental functions (sin, cos, log, exp, etc.)
-- no symbolic integration
-- no general exact factorization for arbitrary higher-degree polynomials over all algebraic extensions
-- quadratic partial fractions work best when the denominator is entered in visible factored form
-- no assumptions system
-- no matrix/tensor algebra
-- no Gröbner basis or multivariate algebra engine
-- Roadmap
+- Only one symbolic variable, x, is currently targeted for polynomial conversion
+- Negative powers are not supported
+- General symbolic division is limited
+- Trigonometric, logarithmic, exponential, and radical expressions are not supported
+- Quadratic-factor support works best when quadratic factors are entered in visible factored form
+- Full symbolic equation solving is not included
+- Full arbitrary-precision integer support is not currently implemented
+- Matrix/tensor algebra is not supported
+- No Gröbner basis or multivariate algebra engine
 
 ---
 
@@ -359,22 +359,6 @@ Possible future upgrades include:
 - file-based input and output
 - a formal unit-testing framework
 - a graphical or web-based interface
-
----
-
-## Current Limitations
-
-This project is intentionally a mini-CAS, not a full symbolic algebra system.
-
-Current limitations include:
-
-- Only one symbolic variable, x, is currently targeted for polynomial conversion
-- Negative powers are not supported
-- General symbolic division is limited
-- Trigonometric, logarithmic, exponential, and radical expressions are not supported
-- Quadratic-factor support works best when quadratic factors are entered in visible factored form
-- Full symbolic equation solving is not included
-- Full arbitrary-precision integer support is not currently implemented
 
 ---
 
