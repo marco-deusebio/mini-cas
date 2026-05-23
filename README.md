@@ -214,6 +214,15 @@ Example output:
 
 ## Build and Run Program
 
+### ***WARNING***
+*Also, if the whole* ```main.cpp``` *file is wrapped inside a block comment like this:*
+
+/*
+    ...
+*/
+
+*So, in order to run the program, the opening* ```/*``` *and the closing* ```*/``` *must be deleted.* 
+
 ***CLI build***
 
 Compile with:
@@ -238,6 +247,14 @@ Add these .cpp files to Compile Sources:
 - `Parser.cpp`
 - `Factor.cpp`
 - `PartialFractions.cpp`
+
+**DO NOT** add ```tests/ParserTests.cpp``` as a Compile Source during a non-test build, unless the test file:
+
+- is added to a separate test target
+            or
+- is added temporarily to the main target while debugging
+            or
+- is wrapped inside a temporary block comment 
 
 Then build and run using Command + B.
 
@@ -268,6 +285,8 @@ Add tests/ParserTests.cpp either:
 - to a separate test target
             or
 - temporarily to the main target while debugging
+
+Then build and run using Command + B.
 
 ---
 
