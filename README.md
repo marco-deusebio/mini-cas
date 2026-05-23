@@ -85,7 +85,7 @@ Mini CAS/
 
 ## Core Components
 
-***Rational***
+### Rational
 
 The Rational class provides exact fraction arithmetic.
 
@@ -103,8 +103,7 @@ Example:
 ```
 2/3 + 5/6 = 3/2
 ```
-
-***Expr***
+### Expr
 
 The expression system represents symbolic math expressions as an expression tree.
 
@@ -121,8 +120,7 @@ This allows the program to represent symbolic expressions such as:
 ```
 (2/3)*x + x^2 - 5
 ```
-
-***Parser***
+### Parser
 
 The parser converts user-entered strings into symbolic expression trees.
 
@@ -134,8 +132,7 @@ x/2 + (x+1)^2
 ```
 The parser supports implicit multiplication, so expressions like 2x and x(x+1) can be understood without requiring every multiplication symbol to be written explicitly.
 
-
-***Simplify***
+### Simplify
 
 The simplifier reduces symbolic expressions by combining compatible terms and simplifying expression structure.
 
@@ -149,8 +146,7 @@ x
 ```
 It also simplifies products, powers, constants, and repeated symbolic factors.
 
-
-***Polynomial***
+### Polynomial
 
 The Polynomial class represents exact polynomials with rational coefficients.
 
@@ -172,8 +168,7 @@ Example polynomial:
 ```
 x^2 + 2/3*x - 5
 ```
-
-***Factor***
+### Factor
 
 The factoring system provides exact factorization tools over the rational numbers.
 
@@ -190,8 +185,7 @@ Example factorization target:
 ```
 (x-3)(x+2)
 ```
-
-***PartialFractions***
+### PartialFractions
 
 The partial-fraction system decomposes rational functions into exact partial fractions.
 
@@ -214,15 +208,15 @@ Example output:
 
 ## Build and Run Program
 
-****WARNING:*** The whole* ```main.cpp``` *file is wrapped inside a block comment like this:*
+****WARNING:*** The whole* `main.cpp` *file is wrapped inside a block comment like this:*
 ```
 /*
     ...
 */
 ```
-*So, in order to run the program, the opening* ```/*``` *and the closing* ```*/``` *must be deleted.* 
+*So, in order to run the program, the opening* `/*` *and the closing* `*/` *must be deleted.* 
 
-***CLI build***
+### CLI build
 
 Compile with:
 ```
@@ -234,7 +228,7 @@ Then run with:
 ```
 ./minicAS
 ```
-***Xcode build***
+### Xcode build
 
 Add these .cpp files to Compile Sources:
 
@@ -247,7 +241,7 @@ Add these .cpp files to Compile Sources:
 - `Factor.cpp`
 - `PartialFractions.cpp`
 
-***DO NOT:*** include ```tests/ParserTests.cpp``` as a Compile Source during a non-test build, unless the test file:
+***DO NOT:*** include `tests/ParserTests.cpp` as a Compile Source during a non-test build, unless the test file:
 
 - is added to a separate test target
             or
@@ -265,7 +259,7 @@ The project includes a test file named:
 ```
 ParserTests.cpp
 ```
-***CLI test build***
+### CLI test build
 
 Compile tests with:
 ```
@@ -277,9 +271,9 @@ Then run with:
 ```
 ./minicAS_tests
 ```
-***Xcode test build***
+### Xcode test build
 
-Add tests/ParserTests.cpp either:
+Add `tests/ParserTests.cpp` either:
 
 - to a separate test target
             or
