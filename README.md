@@ -85,7 +85,7 @@ Mini CAS/
 
 ## Core Components
 
-**Rational**
+***Rational***
 
 The Rational class provides exact fraction arithmetic.
 
@@ -104,7 +104,7 @@ Example:
 2/3 + 5/6 = 3/2
 ```
 
-**Expr**
+***Expr***
 
 The expression system represents symbolic math expressions as an expression tree.
 
@@ -122,7 +122,7 @@ This allows the program to represent symbolic expressions such as:
 (2/3)*x + x^2 - 5
 ```
 
-**Parser**
+***Parser***
 
 The parser converts user-entered strings into symbolic expression trees.
 
@@ -135,7 +135,7 @@ x/2 + (x+1)^2
 The parser supports implicit multiplication, so expressions like 2x and x(x+1) can be understood without requiring every multiplication symbol to be written explicitly.
 
 
-**Simplify**
+***Simplify***
 
 The simplifier reduces symbolic expressions by combining compatible terms and simplifying expression structure.
 
@@ -150,7 +150,7 @@ x
 It also simplifies products, powers, constants, and repeated symbolic factors.
 
 
-**Polynomial**
+***Polynomial***
 
 The Polynomial class represents exact polynomials with rational coefficients.
 
@@ -173,7 +173,7 @@ Example polynomial:
 x^2 + 2/3*x - 5
 ```
 
-**Factor**
+***Factor***
 
 The factoring system provides exact factorization tools over the rational numbers.
 
@@ -191,7 +191,7 @@ Example factorization target:
 (x-3)(x+2)
 ```
 
-**PartialFractions**
+***PartialFractions***
 
 The partial-fraction system decomposes rational functions into exact partial fractions.
 
