@@ -214,13 +214,12 @@ Example output:
 
 ## Build and Run Program
 
-### ***WARNING***
-*Also, if the whole* ```main.cpp``` *file is wrapped inside a block comment like this:*
-
+****WARNING:*** The whole* ```main.cpp``` *file is wrapped inside a block comment like this:*
+```
 /*
     ...
 */
-
+```
 *So, in order to run the program, the opening* ```/*``` *and the closing* ```*/``` *must be deleted.* 
 
 ***CLI build***
@@ -248,7 +247,7 @@ Add these .cpp files to Compile Sources:
 - `Factor.cpp`
 - `PartialFractions.cpp`
 
-**DO NOT** add ```tests/ParserTests.cpp``` as a Compile Source during a non-test build, unless the test file:
+***DO NOT:*** include ```tests/ParserTests.cpp``` as a Compile Source during a non-test build, unless the test file:
 
 - is added to a separate test target
             or
@@ -256,7 +255,7 @@ Add these .cpp files to Compile Sources:
             or
 - is wrapped inside a temporary block comment 
 
-Then build and run using Command + B.
+Build and run using Command + B.
 
 ---
 
