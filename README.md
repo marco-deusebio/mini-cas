@@ -103,6 +103,7 @@ Example:
 ```
 2/3 + 5/6 = 3/2
 ```
+
 **Expr**
 
 The expression system represents symbolic math expressions as an expression tree.
@@ -120,6 +121,7 @@ This allows the program to represent symbolic expressions such as:
 ```
 (2/3)*x + x^2 - 5
 ```
+
 **Parser**
 
 The parser converts user-entered strings into symbolic expression trees.
@@ -131,6 +133,7 @@ Supported syntax includes:
 x/2 + (x+1)^2
 ```
 The parser supports implicit multiplication, so expressions like 2x and x(x+1) can be understood without requiring every multiplication symbol to be written explicitly.
+
 
 **Simplify**
 
@@ -145,6 +148,7 @@ becoming:
 x
 ```
 It also simplifies products, powers, constants, and repeated symbolic factors.
+
 
 **Polynomial**
 
@@ -168,6 +172,7 @@ Example polynomial:
 ```
 x^2 + 2/3*x - 5
 ```
+
 **Factor**
 
 The factoring system provides exact factorization tools over the rational numbers.
@@ -185,6 +190,7 @@ Example factorization target:
 ```
 (x-3)(x+2)
 ```
+
 **PartialFractions**
 
 The partial-fraction system decomposes rational functions into exact partial fractions.
