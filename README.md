@@ -214,7 +214,7 @@ Example output:
 
 ## Build and Run Program
 
-**CLI build**
+***CLI build***
 
 Compile with:
 ```
@@ -226,7 +226,7 @@ Then run with:
 ```
 ./minicAS
 ```
-**Xcode build**
+***Xcode build***
 
 Add these .cpp files to Compile Sources:
 
@@ -249,7 +249,7 @@ The project includes a test file named:
 ```
 ParserTests.cpp
 ```
-**CLI test build**
+***CLI test build***
 
 Compile tests with:
 ```
@@ -261,7 +261,7 @@ Then run with:
 ```
 ./minicAS_tests
 ```
-**Xcode test build**
+***Xcode test build***
 
 Add tests/ParserTests.cpp either:
 
